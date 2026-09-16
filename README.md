@@ -21,6 +21,11 @@ The collection is organized as such:
 * **`fs-neon-noir.frag`**: Cyberpunk aesthetic with crushed blacks, vibrant neon pink/cyan pops, chromatic fringing, and deep shadow blue tints.
 * **`fs-sun-bleached.frag`**: Per-dye UV bleaching simulation (faded magenta/cyan, yellow shift) mimicking cartridges left on car dashboards or sunlit store windows.
 
+### 3. FS DMG Pack
+* **`fs-dmg-authentic.frag`**: Physical Game Boy DMG-01 STN reflective LCD simulation with subpixel grid gaps, depth backplane shadowing, metallic foil grain, and lens vignette. Includes selectable DMG, Pocket, and Pass-through modes.
+* **`fs-dmg-ghost.frag`**: Passive-matrix motion smear and liquid crystal response decay (ghosting) layered over DMG/Pocket LCD grid lines and backplane shadowing.
+* **`fs-dmg-pocket.frag`**: Dedicated 1996 Game Boy Pocket (MGB-001) FSTN panel simulation featuring true high-contrast silver-grey grading, tighter pixel grid spacing, and tunable foil warmth.
+
 ---
 
 ## Shader Catalog
@@ -28,14 +33,10 @@ The collection is organized as such:
 | Shader Name (MustardOS) | File Name | Pack | Provenance | Notes |
 |---|---|---|---|---|
 | **FS Sharp Shimmerless** | `fs-sharp-shimmerless.frag` | Structure | Port (`zadpos`) | Clean box filter, no shimmering |
-| **FS Twilight** | `fs-twilight.frag` | Atmosphere | Original | Golden hour to blue hour ambient shifts |                                                                                                                                                 
-| **FS Worn Polaroid** | `fs-worn-polaroid.frag` | Atmosphere | Original | Instant film fade, chemical leak, & grain |                                                                                                                                     
-| **FS Campfire** | `fs-campfire.frag` | Atmosphere | Original | Dynamic warm ember firelight flicker |                                                                                                                                                    
-| **FS Rain on Glass** | `fs-rain-on-glass.frag` | Atmosphere | Original | Rain streak refraction & overcast grade |                                                                                                                                       
-| **FS Dusty Attic** | `fs-dusty-attic.frag` | Atmosphere | Original | Yellowed plastic, dust motes & light beam |                                                                                                                                         
-| **FS Projector Film** | `fs-projector-film.frag` | Atmosphere | Original | 8mm vintage reel with gate weave & scratches |                                                                                                                                
-| **FS Neon Noir** | `fs-neon-noir.frag` | Atmosphere | Original | Cyberpunk high-contrast rain & neon glow |                                                                                                                                              
-| **FS Sun Bleached** | `fs-sun-bleached.frag` | Atmosphere | Original | Multi-layer UV dye breakdown simulation |  
+| **FS Twilight** | `fs-twilight.frag` | Atmosphere | Original | Golden hour to blue hour ambient shifts |                                                                                                      | **FS Worn Polaroid** | `fs-worn-polaroid.frag` | Atmosphere | Original | Instant film fade, chemical leak, & grain |                                                                                          | **FS Campfire** | `fs-campfire.frag` | Atmosphere | Original | Dynamic warm ember firelight flicker |                                                                                                         | **FS Rain on Glass** | `fs-rain-on-glass.frag` | Atmosphere | Original | Rain streak refraction & overcast grade |                                                                                            | **FS Dusty Attic** | `fs-dusty-attic.frag` | Atmosphere | Original | Yellowed plastic, dust motes & light beam |                                                                                              | **FS Projector Film** | `fs-projector-film.frag` | Atmosphere | Original | 8mm vintage reel with gate weave & scratches |                                                                                     | **FS Neon Noir** | `fs-neon-noir.frag` | Atmosphere | Original | Cyberpunk high-contrast rain & neon glow |                                                                                                   | **FS Sun Bleached** | `fs-sun-bleached.frag` | Atmosphere | Original | Multi-layer UV dye breakdown simulation |  
+| **FS DMG Authentic** | `fs-dmg-authentic.frag` | DMG | Original | STN reflective LCD, backplane shadow, foil grain & vignette |
+| **FS DMG Ghost** | `fs-dmg-ghost.frag` | DMG | Original | Physical passive-matrix LCD response decay & motion smear |
+| **FS DMG Pocket** | `fs-dmg-pocket.frag` | DMG | Original | Game Boy Pocket FSTN panel with silver foil tint & crisp grid |
 
 ---
 
