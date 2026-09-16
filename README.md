@@ -41,10 +41,7 @@ The collection is organized as such:
 
 ## Live Parameter Tuning
 
-All shaders declare interactive `#pragma parameter` uniforms that can be tweaked in real-time directly from the MustardOS in-game quick menu:
-1. Open the MustardOS in-game Quick Menu while running your game.
-2. Navigate to **Shaders** → **Shader Parameters**.
-3. Adjust values (such as grid intensity, film weave, ink pairing, light angles, or color grading) live on-screen.
+All shaders declare interactive `#pragma parameter` uniforms that can be tweaked in real-time directly from the MustardOS in-game quick menu.
 
 ────── 
 ## 📜 Credits & Licensing
