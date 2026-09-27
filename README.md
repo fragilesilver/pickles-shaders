@@ -35,6 +35,14 @@ The collection is organized as such:
 * **`fs-e-ink.frag`**: Electronic paper display (EPD) simulation featuring selectable greyscale steps (1-bit to Carta 16), Bayer ordered dithering, paper tone warmth, ambient room light sheen, partial-refresh ghosting, and periodic screen inversion flashes.
 * **`fs-risograph.frag`**: Two-color Risograph screen printing emulation featuring selectable dual spot-color duotones, rotatable halftone dot screening, mechanical plate misregistration, ink density pooling, and fibrous paper texture.
 
+### 5. FS Farts & Weeds Pack
+* **`fs-stoner-vision.frag`**: Bloodshot vignette, dreamy bloom, soft focus, and gentle breathing zoom.
+* **`fs-silent-but-deadly.frag`**: Periodic green gas cloud creep with air distortion and randomized event timing.
+* **`fs-purple-haze.frag`**: Psychedelic hue rotation, purple base grade, and lazy wave warp.
+* **`fs-hotbox.frag`**: Dense drifting smoke layers, warm lamp glow, contrast loss, and lifted blacks.
+* **`fs-dutch-oven.frag`**: Bottom-pooling green miasma with heat-shimmer air distortion and murk.
+* **`fs-crop-dusting.frag`**: Drifting random gas puffs that warp the image as they pass.
+
 ---
 
 ## Shader Catalog
@@ -60,6 +68,12 @@ The collection is organized as such:
 | **FS PS1 Dither** | `fs-ps1-dither.frag` | Retro Hardware | Original | PS1 15-bit color quantization, Bayer matrix dither & composite blur |
 | **FS E-Ink** | `fs-e-ink.frag` | Print & Paper | Original | Electronic paper display with ordered dither, sheen & flash refresh |
 | **FS Risograph** | `fs-risograph.frag` | Print & Paper | Original | 2-color screen printing with halftone dots, misregistration & paper grain |
+| **FS Stoner Vision** | `fs-stoner-vision.frag` | Farts & Weeds | Original | Bloodshot vignette, dreamy bloom, soft focus & breathing zoom |
+| **FS Silent But Deadly** | `fs-silent-but-deadly.frag` | Farts & Weeds | Original | Periodic green gas cloud creep with air distortion |
+| **FS Purple Haze** | `fs-purple-haze.frag` | Farts & Weeds | Original | Psychedelic hue rotation, purple base grade & wave warp |
+| **FS Hotbox** | `fs-hotbox.frag` | Farts & Weeds | Original | Dense drifting smoke layers, warm lamp glow & lifted blacks |
+| **FS Dutch Oven** | `fs-dutch-oven.frag` | Farts & Weeds | Original | Pooling bottom miasma, heat shimmer & murk |
+| **FS Crop Dusting** | `fs-crop-dusting.frag` | Farts & Weeds | Original | Drifting random gas puffs with distortion |
 
 ---
 
