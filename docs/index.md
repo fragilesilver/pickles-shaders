@@ -30,7 +30,7 @@ Every shader has a before/after slider: drag it (or focus it and use the arrow k
 ## Install
 
 1. Download the `.frag` files you want (each shader has a download link), or clone the whole repo.
-2. Copy them into the MustardOS shader folder on your SD card.
+2. Copy them into the MustardOS shader folder `MUOS/save/pickles/shader/{custom folder name}` on your SD card.
 3. Pick the shader in MustardOS.
 
 ## Live parameter tuning
@@ -38,6 +38,6 @@ Every shader has a before/after slider: drag it (or focus it and use the arrow k
 All shaders declare `#pragma parameter` uniforms you can tweak in real time from the MustardOS quick menu:
 
 1. Open the Quick Menu while running your game.
-2. Go to **Settings** → **Visuals** → **Shaders** and press Enter to view the list.
+2. Go to **Settings** → **Visuals** → **Shaders** → **{custom folder name}**, and press Enter to view the list.
 3. With the shader highlighted, press the North button to adjust.
 4. Change the values until it looks right.
