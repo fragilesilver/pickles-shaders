@@ -1,0 +1,29 @@
+{%- comment -%}
+  Before/after comparison slider.
+  Usage: {% include compare.html slug="fs-campfire" name="FS Campfire" game="Zelda: A Link to the Past (SNES)" %}
+  Expects assets/shots/<slug>-before.png and <slug>-after.png (640x480).
+  Falls back to placeholder SVGs until the screenshots exist.
+{%- endcomment -%}
+{%- assign shot = "/assets/shots/" | append: include.slug -%}
+{%- assign before_src = shot | append: "-before.png" | relative_url -%}
+{%- assign after_src = shot | append: "-after.png" | relative_url -%}
+{%- assign before_ph = "/assets/shots/placeholder-before.svg" | relative_url -%}
+{%- assign after_ph = "/assets/shots/placeholder-after.svg" | relative_url -%}
+<figure class="cmp">
+  <div class="cmp-frame">
+    <img class="cmp-after" src="{{ after_src }}" width="640" height="480" loading="lazy" draggable="false"
+         alt="{{ include.name }} applied{% if include.game %} to {{ include.game }}{% endif %}"
+         onerror="this.onerror=null;this.src='{{ after_ph }}'">
+    <img class="cmp-before" src="{{ before_src }}" width="640" height="480" loading="lazy" draggable="false"
+         alt="{{ include.game | default: 'Original' }} without shader"
+         onerror="this.onerror=null;this.src='{{ before_ph }}'">
+    <span class="cmp-handle" aria-hidden="true"></span>
+    <span class="cmp-label cmp-label-before" aria-hidden="true">Before</span>
+    <span class="cmp-label cmp-label-after" aria-hidden="true">After</span>
+    <input class="cmp-range" type="range" min="0" max="100" value="50" step="1"
+           aria-label="Comparison slider for {{ include.name }}: left shows original, right shows shader">
+  </div>
+  {%- if include.game %}
+  <figcaption>{{ include.game }}</figcaption>
+  {%- endif %}
+</figure>

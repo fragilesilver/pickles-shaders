@@ -1,6 +1,6 @@
 # 🥒 Pickles Shaders by fragilesilver
 
-[![MustardOS Compatible](https://img.shields.io/badge/MustardOS-Andromeda%20%2F%20Pickles-5A6F23.svg)](https://muos.dev) [![Shaders](https://img.shields.io/badge/Shaders-25%20Total-purple.svg)](#shader-catalog)
+[![MustardOS Compatible](https://img.shields.io/badge/MustardOS-Andromeda%20%2F%20Pickles-5A6F23.svg)](https://muos.dev) [![Shaders](https://img.shields.io/badge/Shaders-25%20Total-purple.svg)](#shader-catalog) [![Gallery](https://img.shields.io/badge/Gallery-Before%20%2F%20After-9ACD32.svg)](https://fragilesilver.github.io/pickles-shaders/)
 
 A collection of Pickles shaders made specifically for [MustardOS (Andromeda)](https://muos.dev) on low-power handhelds.
 

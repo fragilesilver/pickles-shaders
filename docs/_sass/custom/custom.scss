@@ -1,0 +1,108 @@
+// Before/after comparison slider
+.cmp {
+  --pos: 50%;
+  max-width: 640px;
+  margin: 1rem 0 2rem;
+
+  figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    opacity: 0.75;
+  }
+}
+
+.cmp-frame {
+  position: relative;
+  aspect-ratio: 640 / 480;
+  overflow: hidden;
+  background: #000;
+  border-radius: 4px;
+  cursor: ew-resize;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    image-rendering: pixelated;
+    pointer-events: none;
+  }
+}
+
+.cmp-before {
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+
+.cmp-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 2px;
+  transform: translateX(-1px);
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+
+  &::after {
+    content: "\2039\00a0\203A";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.cmp-frame:focus-within .cmp-handle::after {
+  outline: 3px solid #9acd32;
+  outline-offset: 2px;
+}
+
+.cmp-label {
+  position: absolute;
+  top: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.cmp-label-before { left: 0.5rem; }
+.cmp-label-after { right: 0.5rem; }
+
+// Visually hidden but keyboard-focusable
+.cmp-range {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  opacity: 0;
+}
+
+.shader-meta {
+  margin-top: -0.5rem;
+  font-size: 0.85rem;
+}
