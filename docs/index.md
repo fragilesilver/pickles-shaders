@@ -8,6 +8,7 @@ nav_order: 1
 {: .fs-9 }
 
 25 Pickles shaders made for [MustardOS (Andromeda)](https://muos.dev) on low-power handhelds — CRT and LCD ports, moody atmospheres, Game Boy panels, print effects and some very silly gas.
+Proudly ported, crafted, visualised or oogaaboogaaed by a cat in pink headphones in Brunei Darussalam.
 {: .fs-6 .fw-300 }
 
 [Browse the shaders](#packs){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
